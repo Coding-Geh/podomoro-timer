@@ -2,6 +2,8 @@
 
 A **simple, elegant, and responsive** Pomodoro timer built with **SvelteKit** and **Tailwind CSS**. Perfect for boosting productivity with beautiful design and powerful features.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Coding-Geh/podomoro-timer)
+
 ![Pomodoro Timer](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
