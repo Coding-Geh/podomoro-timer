@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { _, waitLocale } from 'svelte-i18n';
+	import { _ } from 'svelte-i18n';
 	import Timer from '$lib/components/Timer.svelte';
 	import TaskList from '$lib/components/TaskList.svelte';
 	import Stats from '$lib/components/Stats.svelte';
@@ -11,10 +11,18 @@
 	let isFullscreen = false;
 	let i18nReady = false;
 
-	// Wait for i18n to be ready
-	$: if ($waitLocale) {
-		i18nReady = true;
-	}
+	// Simple approach: set ready after mount
+	onMount(() => {
+		if (browser) {
+			// Mark as ready after a short delay to ensure i18n is loaded
+			setTimeout(() => {
+				i18nReady = true;
+			}, 100);
+		} else {
+			// Server-side: mark as ready immediately
+			i18nReady = true;
+		}
+	});
 
 	function toggleFullscreen() {
 		if (browser) {
