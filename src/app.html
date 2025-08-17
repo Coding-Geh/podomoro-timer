@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="%lang%" class="%htmlClass%">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#10b981" />
+		<meta name="description" content="Simple and elegant Pomodoro timer to boost your productivity" />
+		<meta name="keywords" content="pomodoro, timer, productivity, focus, time management" />
+		<meta name="author" content="Pomodoro Timer" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="%sveltekit.url%" />
+		<meta property="og:title" content="Pomodoro Timer" />
+		<meta property="og:description" content="Simple and elegant Pomodoro timer to boost your productivity" />
+		<meta property="og:image" content="%sveltekit.assets%/og-image.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="%sveltekit.url%" />
+		<meta property="twitter:title" content="Pomodoro Timer" />
+		<meta property="twitter:description" content="Simple and elegant Pomodoro timer to boost your productivity" />
+		<meta property="twitter:image" content="%sveltekit.assets%/og-image.png" />
+
+		<!-- PWA -->
+		<link rel="manifest" href="%sveltekit.assets%/manifest.json" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<meta name="apple-mobile-web-app-title" content="Pomodoro Timer" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
+
+		<!-- Security headers -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+		<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="%bodyClass%">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

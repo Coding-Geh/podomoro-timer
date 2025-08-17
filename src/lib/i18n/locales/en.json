@@ -1,0 +1,58 @@
+{
+	"app": {
+		"title": "Pomodoro Timer",
+		"description": "Simple and elegant Pomodoro timer",
+		"footer": "Stay focused, stay productive! 🍅"
+	},
+	"timer": {
+		"ready": "Ready to focus",
+		"focusing": "Focusing",
+		"break": "Taking a break",
+		"paused": "Paused",
+		"start": "Start",
+		"pause": "Pause",
+		"reset": "Reset",
+		"set": "Set",
+		"modes": {
+			"focus": "Focus",
+			"shortBreak": "Short Break",
+			"longBreak": "Long Break"
+		},
+		"durations": {
+			"focus": "25 min",
+			"shortBreak": "5 min",
+			"longBreak": "15 min"
+		}
+	},
+	"tasks": {
+		"title": "Tasks",
+		"addPlaceholder": "Add a new task...",
+		"add": "Add",
+		"empty": "No tasks yet",
+		"total": "Total",
+		"completed": "Completed",
+		"delete": "Delete task",
+		"complete": "Complete task",
+		"uncomplete": "Uncomplete task",
+		"shortcuts": "Shortcuts",
+		"shortcutsNew": "to add new task"
+	},
+	"stats": {
+		"title": "Today's Progress",
+		"sessions": "Sessions",
+		"tasks": "Tasks",
+		"focusProgress": "Focus Progress",
+		"focusHours": "Focus Hours",
+		"tasksCompleted": "Tasks Completed",
+		"completionRate": "Completion Rate",
+		"taskProgress": "Task Progress",
+		"summary": "Summary",
+		"motivation": {
+			"1": "The only way to do great work is to love what you do.",
+			"2": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+			"3": "The future depends on what you do today.",
+			"4": "Don't watch the clock; do what it does. Keep going.",
+			"5": "The only limit to our realization of tomorrow is our doubts of today."
+		}
+	}
+}

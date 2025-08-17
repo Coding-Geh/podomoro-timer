@@ -1,0 +1,58 @@
+{
+	"app": {
+		"title": "Pomodoro Timer",
+		"description": "Timer Pomodoro sederhana dan elegan",
+		"footer": "Tetap fokus, tetap produktif! 🍅"
+	},
+	"timer": {
+		"ready": "Siap fokus",
+		"focusing": "Sedang fokus",
+		"break": "Sedang istirahat",
+		"paused": "Dijeda",
+		"start": "Mulai",
+		"pause": "Jeda",
+		"reset": "Reset",
+		"set": "Atur",
+		"modes": {
+			"focus": "Fokus",
+			"shortBreak": "Istirahat Pendek",
+			"longBreak": "Istirahat Panjang"
+		},
+		"durations": {
+			"focus": "25 menit",
+			"shortBreak": "5 menit",
+			"longBreak": "15 menit"
+		}
+	},
+	"tasks": {
+		"title": "Tugas",
+		"addPlaceholder": "Tambah tugas baru...",
+		"add": "Tambah",
+		"empty": "Belum ada tugas",
+		"total": "Total",
+		"completed": "Selesai",
+		"delete": "Hapus tugas",
+		"complete": "Selesaikan tugas",
+		"uncomplete": "Batalkan selesai",
+		"shortcuts": "Shortcut",
+		"shortcutsNew": "untuk tambah tugas baru"
+	},
+	"stats": {
+		"title": "Progress Hari Ini",
+		"sessions": "Sesi",
+		"tasks": "Tugas",
+		"focusProgress": "Progress Fokus",
+		"focusHours": "Jam Fokus",
+		"tasksCompleted": "Tugas Selesai",
+		"completionRate": "Tingkat Penyelesaian",
+		"taskProgress": "Progress Tugas",
+		"summary": "Ringkasan",
+		"motivation": {
+			"1": "Satu-satunya cara untuk melakukan pekerjaan hebat adalah mencintai apa yang kamu lakukan.",
+			"2": "Kesuksesan bukan akhir, kegagalan bukan fatal: yang penting adalah keberanian untuk terus berjalan.",
+			"3": "Masa depan bergantung pada apa yang kamu lakukan hari ini.",
+			"4": "Jangan menonton jam; lakukan apa yang dilakukannya. Terus berjalan.",
+			"5": "Satu-satunya batasan untuk realisasi masa depan kita adalah keraguan kita hari ini."
+		}
+	}
+}
