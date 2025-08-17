@@ -66,6 +66,15 @@
 				</div>
 				
 				<div class="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+					<a 
+						href="/docs" 
+						class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+						aria-label="Keyboard shortcuts documentation"
+					>
+						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg>
+					</a>
 					<LanguageSwitcher />
 					<ThemeToggle />
 				</div>
