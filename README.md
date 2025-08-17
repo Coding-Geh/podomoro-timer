@@ -1,51 +1,75 @@
-# 🍅 Pomodoro Timer - Simple Elegant Focus App
+# 🍅 Pomodoro Timer
 
-A modern, responsive Pomodoro Timer built with **SvelteKit** and **Tailwind CSS** featuring a clean, elegant design system optimized for productivity and focus.
+A **simple, elegant, and responsive** Pomodoro timer built with **SvelteKit** and **Tailwind CSS**. Perfect for boosting productivity with beautiful design and powerful features.
+
+![Pomodoro Timer](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
 ## ✨ Features
 
-### 🎯 **Core Timer Features**
-- **Pomodoro Technique**: 25min Focus / 5min Short Break / 15min Long Break
-- **Custom Timer**: Set your own focus duration
+### 🎯 **Timer Features**
+- **Three Timer Modes**: Focus (25 min), Short Break (5 min), Long Break (15 min)
+- **Custom Timer**: Set custom minutes and seconds
 - **Fullscreen Mode**: Distraction-free timer experience
-- **Keyboard Shortcuts**: Space/Enter (Start/Pause), R (Reset), F (Fullscreen)
-- **Audio Notifications**: Gentle sound alerts when sessions complete
-- **Desktop Notifications**: Browser notifications for session completion
+- **Keyboard Shortcuts**: Complete keyboard navigation
+- **Progress Circle**: Visual progress indicator
+- **Responsive Design**: Works perfectly on all devices
 
-### 📱 **Modern UI/UX**
-- **Responsive Design**: Perfect on mobile, tablet, and desktop
+### 📋 **Task Management**
+- **Add Tasks**: Quick task creation with keyboard shortcuts
+- **Drag & Drop**: Reorder tasks easily
+- **Task Completion**: Mark tasks as complete/incomplete
+- **Task Statistics**: Track completion rates
+- **Persistent Storage**: Tasks saved locally
+
+### 📊 **Statistics & Progress**
+- **Session Tracking**: Count completed Pomodoro sessions
+- **Focus Hours**: Track total focus time
+- **Task Progress**: Monitor task completion
+- **Completion Rate**: Visual progress indicators
+- **Daily Summary**: Overview of daily productivity
+
+### 🎨 **UI/UX Features**
 - **Dark/Light Mode**: Automatic theme switching
-- **Internationalization**: English & Indonesian support
-- **Elegant Animations**: Subtle, performance-optimized animations
-- **Anti-Overflow**: Zero overflow issues across all screen sizes
-- **Compact Layout**: Focus-optimized, space-efficient design
+- **Internationalization**: English and Indonesian support
+- **Elegant Design**: Modern, clean interface
+- **Smooth Animations**: Beautiful transitions and effects
+- **Accessibility**: Full keyboard navigation and screen reader support
 
-### 🎨 **Design System**
-- **Simple Elegant**: Clean, minimal, sophisticated design
-- **Glassmorphism**: Subtle backdrop blur effects
-- **Gradient Backgrounds**: Elegant animated backgrounds
-- **Consistent Spacing**: Standardized padding and margins
-- **Typography Hierarchy**: Material Design 3 text system
-- **Color System**: Semantic colors with proper contrast
+## 🚀 **Keyboard Shortcuts**
 
-### 📊 **Productivity Features**
-- **Task Management**: Add, complete, and track tasks
-- **Progress Tracking**: Visual progress indicators
-- **Statistics**: Focus sessions, completion rates, streaks
-- **Drag & Drop**: Reorder tasks with intuitive gestures
-- **Session History**: Track your productivity patterns
+| Action | Shortcut |
+|--------|----------|
+| Start/Pause Timer | `Space` or `Enter` |
+| Reset Timer | `R` |
+| Toggle Fullscreen | `F` |
+| Focus Mode | `1` |
+| Short Break | `2` |
+| Long Break | `3` |
+| New Task Input | `N` |
+| Exit Fullscreen | `Esc` |
 
-## 🚀 Quick Start
+## 🛠️ **Tech Stack**
+
+- **Framework**: [SvelteKit](https://kit.svelte.dev/) - Full-stack web framework
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- **Internationalization**: [svelte-i18n](https://github.com/kaisermann/svelte-i18n) - Multi-language support
+- **State Management**: Svelte stores for reactive state
+- **Build Tool**: [Vite](https://vitejs.dev/) - Fast build tool and dev server
+
+## 📦 **Installation**
 
 ### Prerequisites
-- **Node.js** 18+ 
-- **npm** or **yarn**
+- Node.js 18+ 
+- npm or yarn
 
-### Installation
+### Setup
 ```bash
-# Clone repository
-git clone <repository-url>
-cd pomodoro-timer
+# Clone the repository
+git clone https://github.com/Coding-Geh/podomoro-timer.git
+cd podomoro-timer
 
 # Install dependencies
 npm install
@@ -53,208 +77,108 @@ npm install
 # Start development server
 npm run dev
 
-# Open browser
-open http://localhost:5173
-```
-
-### Build for Production
-```bash
-# Build optimized version
+# Build for production
 npm run build
 
 # Preview production build
 npm run preview
 ```
 
-## 🎮 Usage Guide
+## 🌐 **Deployment**
 
-### Timer Controls
-- **Start/Pause**: Click timer button or press `Space`/`Enter`
-- **Reset**: Click reset button or press `R`
-- **Fullscreen**: Click fullscreen button or press `F`
-- **Mode Switch**: Click mode buttons or press `1`/`2`/`3`
+### Netlify (Recommended)
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `build`
+4. Deploy automatically on push to main branch
 
-### Task Management
-- **Add Task**: Type in task input and press `Enter`
-- **Complete Task**: Click checkbox to mark as done
-- **Delete Task**: Click trash icon to remove task
-- **Reorder Tasks**: Drag and drop to reorder
+### Vercel
+1. Import project from GitHub
+2. Framework preset: SvelteKit
+3. Deploy automatically
 
-### Keyboard Shortcuts
-| Key | Action |
-|-----|--------|
-| `Space` / `Enter` | Start/Pause Timer |
-| `R` | Reset Timer |
-| `F` | Toggle Fullscreen |
-| `1` | Switch to Focus Mode |
-| `2` | Switch to Short Break |
-| `3` | Switch to Long Break |
-
-## 🏗️ Architecture
-
-### **Tech Stack**
-- **Frontend**: SvelteKit (SSR + SPA)
-- **Styling**: Tailwind CSS + Custom CSS Variables
-- **State Management**: Svelte Stores
-- **Internationalization**: svelte-i18n
-- **Build Tool**: Vite
-
-### **Project Structure**
-```
-pomodoro-timer/
-├── src/
-│   ├── lib/
-│   │   ├── components/          # UI Components
-│   │   │   ├── Timer.svelte     # Main timer component
-│   │   │   ├── TaskList.svelte  # Task management
-│   │   │   ├── Stats.svelte     # Statistics display
-│   │   │   ├── LanguageSwitcher.svelte
-│   │   │   └── ThemeToggle.svelte
-│   │   ├── stores/              # State management
-│   │   │   ├── timer.ts         # Timer state
-│   │   │   ├── tasks.ts         # Task state
-│   │   │   └── stats.ts         # Statistics state
-│   │   ├── i18n/                # Internationalization
-│   │   │   └── locales/
-│   │   │       ├── en.json
-│   │   │       └── id.json
-│   │   └── utils/               # Utility functions
-│   ├── routes/                  # SvelteKit routes
-│   │   └── +page.svelte         # Main app page
-│   └── app.css                  # Global styles & design system
-├── static/                      # Static assets
-├── package.json
-└── README.md
+### Manual Deployment
+```bash
+npm run build
+# Upload the 'build' folder to your hosting provider
 ```
 
-## 🎨 Design System
+## 🎨 **Design System**
 
-### **Color Palette**
-```css
-/* Primary Colors */
---primary: #007AFF;           /* iOS Blue */
---success: #34C759;           /* iOS Green */
---warning: #FF9500;           /* iOS Orange */
---danger: #FF3B30;            /* iOS Red */
+### Color Palette
+- **Primary**: Blue (#3B82F6)
+- **Success**: Green (#10B981)
+- **Warning**: Amber (#F59E0B)
+- **Error**: Red (#EF4444)
+- **Neutral**: Gray scale with dark mode support
 
-/* Neutral Colors */
---gray-50: #F9FAFB;
---gray-100: #F3F4F6;
---gray-200: #E5E7EB;
---gray-300: #D1D5DB;
---gray-400: #9CA3AF;
---gray-500: #6B7280;
---gray-600: #4B5563;
---gray-700: #374151;
---gray-800: #1F2937;
---gray-900: #111827;
+### Typography
+- **Font**: System fonts with fallbacks
+- **Hierarchy**: Material Design 3 typography scale
+- **Responsive**: Scales appropriately on all devices
+
+### Components
+- **Cards**: Glassmorphism effect with backdrop blur
+- **Buttons**: Consistent styling with hover states
+- **Inputs**: Clean, minimal design
+- **Animations**: Smooth transitions and micro-interactions
+
+## 📱 **Responsive Design**
+
+- **Mobile**: Optimized for touch interactions
+- **Tablet**: Adaptive layout with sidebar
+- **Desktop**: Full-featured experience
+- **Fullscreen**: Immersive timer mode
+
+## 🔧 **Configuration**
+
+### Environment Variables
+```env
+# Optional: Customize default settings
+VITE_DEFAULT_FOCUS_TIME=25
+VITE_DEFAULT_SHORT_BREAK=5
+VITE_DEFAULT_LONG_BREAK=15
 ```
 
-### **Component System**
-- **Cards**: Glassmorphism with backdrop blur
-- **Buttons**: Consistent heights with hover effects
-- **Inputs**: Standardized height with focus states
-- **Progress**: Animated circular progress indicators
+### Customization
+- Modify timer durations in `src/lib/stores/timer.ts`
+- Update colors in `src/app.css`
+- Add new languages in `src/lib/i18n/locales/`
 
-### **Typography**
-- **Display**: 48px/56px/64px (Large/Medium/Small)
-- **Headline**: 32px/28px/24px (Large/Medium/Small)
-- **Title**: 22px/16px/14px (Large/Medium/Small)
-- **Body**: 16px/14px (Large/Medium)
-- **Label**: 14px/11px (Large/Small)
-
-## 📱 Responsive Design
-
-### **Breakpoints**
-- **Mobile**: < 640px
-- **Tablet**: 640px - 1024px
-- **Desktop**: > 1024px
-
-### **Layout Strategy**
-- **Mobile-First**: Optimized for mobile experience
-- **Flexible Grids**: Responsive grid layouts
-- **Touch-Friendly**: 44px minimum touch targets
-- **Overflow Protection**: Zero horizontal overflow
-
-## 🔧 Customization
-
-### **Timer Durations**
-Edit `src/lib/stores/timer.ts`:
-```typescript
-const DEFAULT_DURATIONS = {
-  focus: 25 * 60,        // 25 minutes
-  shortBreak: 5 * 60,    // 5 minutes
-  longBreak: 15 * 60     // 15 minutes
-};
-```
-
-### **Theme Colors**
-Edit `src/app.css` CSS variables:
-```css
-:root {
-  --primary: #007AFF;     /* Change primary color */
-  --success: #34C759;     /* Change success color */
-  --warning: #FF9500;     /* Change warning color */
-  --danger: #FF3B30;      /* Change danger color */
-}
-```
-
-### **Adding Languages**
-1. Create new locale file: `src/lib/i18n/locales/[lang].json`
-2. Add translations
-3. Update `src/lib/i18n/index.ts`
-
-## 🚀 Performance
-
-### **Optimizations**
-- **CSS Variables**: Efficient theme switching
-- **Hardware Acceleration**: Transform-based animations
-- **Lazy Loading**: Component-based code splitting
-- **Minimal Bundle**: Tree-shaking and optimization
-- **Efficient Re-renders**: Svelte's reactive system
-
-### **Metrics**
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-- **Bundle Size**: < 100KB gzipped
-
-## 🧪 Testing
-
-### **Manual Testing Checklist**
-- [ ] Timer starts/pauses correctly
-- [ ] Mode switching works
-- [ ] Fullscreen mode functions
-- [ ] Keyboard shortcuts work
-- [ ] Task management works
-- [ ] Statistics update correctly
-- [ ] Responsive design on all devices
-- [ ] Dark/light mode switching
-- [ ] Language switching
-- [ ] No overflow issues
-
-### **Browser Support**
-- **Chrome**: 90+
-- **Firefox**: 88+
-- **Safari**: 14+
-- **Edge**: 90+
-
-## 📄 License
-
-© 2024 **CodingGeh**. All rights reserved.
-
-## 🤝 Contributing
+## 🤝 **Contributing**
 
 1. Fork the repository
-2. Create feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open Pull Request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📞 Support
+## 📄 **License**
 
-For support, email support@codinggeh.com or create an issue in the repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 **Acknowledgments**
+
+- **Pomodoro Technique**: Francesco Cirillo for the productivity method
+- **SvelteKit Team**: Amazing framework and documentation
+- **Tailwind CSS**: Beautiful utility-first CSS framework
+- **Open Source Community**: For inspiration and tools
+
+## 📞 **Support**
+
+- **Issues**: [GitHub Issues](https://github.com/Coding-Geh/podomoro-timer/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Coding-Geh/podomoro-timer/discussions)
+- **Email**: [Contact via GitHub](https://github.com/Coding-Geh)
 
 ---
 
-**Built with ❤️ by CodingGeh**
+<div align="center">
+
+**Stay focused, stay productive! 🍅**
+
+Made with ❤️ by [CodingGeh](https://github.com/Coding-Geh)
+
+[![GitHub stars](https://img.shields.io/github/stars/Coding-Geh/podomoro-timer?style=social)](https://github.com/Coding-Geh/podomoro-timer/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Coding-Geh/podomoro-timer?style=social)](https://github.com/Coding-Geh/podomoro-timer/network/members)
+
+</div>

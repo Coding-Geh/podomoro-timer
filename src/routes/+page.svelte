@@ -106,7 +106,7 @@
 			<!-- Footer -->
 			<footer class="text-center py-3 px-3 sm:px-4 lg:px-6 flex-shrink-0">
 				<p class="text-xs text-gray-500 dark:text-gray-400">
-					{$_('app.footer')} • © 2024 <span class="font-semibold text-blue-500">CodingGeh</span>
+					{$_('app.footer')} • © 2025 <span class="font-semibold text-blue-500">CodingGeh</span>
 				</p>
 			</footer>
 		</div>
